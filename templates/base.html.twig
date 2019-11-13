@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+                }
+            }
+
+            .contact-title {
+                font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+                font-weight: 600;
+                font-size: 40px;
+                color: #ffffff!important;
+                line-height: 1.3em;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class='container-fluid'>
+        {% block body %}{% endblock %}
+    </div>
+        {% block javascripts %}{% endblock %}
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<div class='container-fluid text-white py-5' style='background-color: #383838;'>
+    <div class='row'>
+        <div class='col-2'></div>
+        <div class='col-4'>
+        <p class='contact-title'>Contact us +<br>create project<br>now!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do exceur sante monara eiusmod tempor incididunt</p>
+        </div>
+        <div class='col-4'>ff</div>
+        <div class='col-2'></div>
+    </div>
+</div>
+<footer class="page-footer font-small pt-4 pt-5" style='background-color: #000;'>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left text-white">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Logo Hier</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus facilisis vel ultrices vestibulum vel scelerisque donec proin magna.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Menu</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-white" href="#!">Home</a>
+          </li>
+          <li>
+            <a class="text-white" href="#!">Over de DIF</a>
+          </li>
+          <li>
+            <a class="text-white" href="#!">Inschrijven</a>
+          </li>
+          <li>
+            <a class="text-white" href="#!">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Contact</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a class='text-white' href="mailto:info@dutchinnovationfactory.nl">info@dutchinnovationfactory.nl</a>
+          </li>
+          <li>
+            <a class='text-white' href="tel:088 222 1777">088 222 1777</a>
+          </li>
+          <li>
+            <p>Van Doornenplantsoen 11</br>2722 ZA Zoetermeer</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-white pt-5">© DutchInnovationFactory |
+    <a class="text-white" href="htpps://mborijnland.nl/"> Developed by <span style='font-weight: bold;'>MBORijnland</span></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    </body>
+</html>
