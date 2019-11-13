@@ -6,6 +6,9 @@
         {% block stylesheets %}{% endblock %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
          <style>
+         * {
+             font-family: 'Karla', sans-serif;
+         }
             .bd-placeholder-img {
                 font-size: 1.125rem;
                 text-anchor: middle;
@@ -28,6 +31,23 @@
                 color: #ffffff!important;
                 line-height: 1.3em;
                 text-align: left;
+            }
+
+            /*** Responsive Styles Tablet Only ***/
+            @media all and (min-width: 768px) and (max-width: 980px) {
+                .contact-title {
+                    text-align: center;
+                    font-size: 22px;
+                }
+            
+            }
+
+            /*** Responsive Styles Smartphone Only ***/
+            @media all and (max-width: 767px) {
+                .contact-title {
+                    text-align: center;
+                    font-size: 18px;
+                }
             }
         </style>
     </head>
@@ -59,97 +79,68 @@
         {% block body %}{% endblock %}
     </div>
         {% block javascripts %}{% endblock %}
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<div class='container-fluid text-white py-5' style='background-color: #383838;'>
-    <div class='row'>
-        <div class='col-2'></div>
-        <div class='col-4'>
-        <p class='contact-title'>Contact us +<br>create project<br>now!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do exceur sante monara eiusmod tempor incididunt</p>
+
+        <!-- Contact -->
+
+        <div class='container-fluid text-white py-5' style='background-color: #383838;'>
+            <div class='row py-5'>
+                <div class='col-md-2 col-sm-1 hidden-xs'></div>
+                <div class='col-md-4 col-sm-12'>
+                <p class='contact-title'>Contact us +<br>create project<br>now!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do exceur sante monara eiusmod tempor incididunt</p>
+                </div>
+                <div class='col-md-4 col-sm-12'>ff</div>
+                <div class='col-md-2 col-sm-1 hidden-xs'></div>
+            </div>
         </div>
-        <div class='col-4'>ff</div>
-        <div class='col-2'></div>
-    </div>
-</div>
-<footer class="page-footer font-small pt-4 pt-5" style='background-color: #000;'>
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left text-white">
+        <!-- Footer -->
 
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Logo Hier</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus facilisis vel ultrices vestibulum vel scelerisque donec proin magna.</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Menu</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-white" href="#!">Home</a>
-          </li>
-          <li>
-            <a class="text-white" href="#!">Over de DIF</a>
-          </li>
-          <li>
-            <a class="text-white" href="#!">Inschrijven</a>
-          </li>
-          <li>
-            <a class="text-white" href="#!">Contact</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Contact</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a class='text-white' href="mailto:info@dutchinnovationfactory.nl">info@dutchinnovationfactory.nl</a>
-          </li>
-          <li>
-            <a class='text-white' href="tel:088 222 1777">088 222 1777</a>
-          </li>
-          <li>
-            <p>Van Doornenplantsoen 11</br>2722 ZA Zoetermeer</p>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 text-white pt-5">© DutchInnovationFactory |
-    <a class="text-white" href="htpps://mborijnland.nl/"> Developed by <span style='font-weight: bold;'>MBORijnland</span></a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
+        <footer class="page-footer font-small pt-4 pt-5" style='background-color: #000;'>
+        <div class="container text-center text-md-left text-white">
+            <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">Logo Hier</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus facilisis vel ultrices vestibulum vel scelerisque donec proin magna.</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-white" href="#!">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="#!">Over de DIF</a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="#!">Inschrijven</a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="#!">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Contact</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class='text-white' href="mailto:info@dutchinnovationfactory.nl">info@dutchinnovationfactory.nl</a>
+                    </li>
+                    <li>
+                        <a class='text-white' href="tel:088 222 1777">088 222 1777</a>
+                    </li>
+                    <li>
+                        <p>Van Doornenplantsoen 11</br>2722 ZA Zoetermeer</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-white pt-5">© DutchInnovationFactory |
+            <a class="text-white" href="htpps://mborijnland.nl/"> Developed by <span style='font-weight: bold;'>MBORijnland</span></a>
+        </div>
+        </footer>
     </body>
 </html>
